@@ -1,0 +1,80 @@
+/*Sobre mi */
+
+.programa{
+    width: 170px;
+    height: 25px;
+    background-color: rgb(57, 43, 88);
+    padding:  5px;
+    color: blanchedalmond;
+    animation-name: programa;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes programa{
+    0%{ width: 0%; }
+    100%{ width: 90%;
+      background-color:rgb(57, 43, 88);}
+ }
+
+ .programa50{
+    width: 170px;
+    height: 25px;
+    background-color: rgb(57, 43, 88);
+    padding:  5px;
+    color: blanchedalmond;
+    animation-name: programa50;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes programa50 {
+    0%{ width: 0%; }
+    100%{ width: 45%;
+      background-color:rgb(57, 43, 88);}
+ }
+
+ .programa70{
+    width: 170px;
+    height: 25px;
+    background-color: rgb(57, 43, 88);
+    padding:  5px;
+    color: blanchedalmond;
+    animation-name: programa70;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+ }
+
+
+ @keyframes programa70 {
+    0%{ width: 0px; }
+    100%{ width: 70%;
+      background-color:rgb(57, 43, 88);}
+ }
+
+ .programa80{
+    width: 170px;
+    height: 25px;
+    background-color: rgb(57, 43, 88);
+    padding:  5px;
+    color: blanchedalmond;
+    animation-name: programa80;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+ }
+ 
+
+ @keyframes programa80 {
+    0%{ width: 0; }
+    100%{ width: 80%;
+      background-color:rgb(57, 43, 88);}
+ }
+ 

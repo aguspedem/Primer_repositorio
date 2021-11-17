@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/*Css solo reconoce bloques de comentarios*/
+div {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  width: 135px;
+}
+
+header {
+  background-color: #f9f4ea;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+}
+
+.saludoBienvenida {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 40%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Menú con submenú*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: 15%;
+  height: 40px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  width: 100px;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  background-color: #f9f4ea;
+  margin: 20px;
+}
+
+li a {
+  text-decoration: none;
+  background-color: #f9f4ea;
+  color: black;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+  background-color: #f9f4ea;
+}
+
+ul ul li a {
+  display: block;
+  width: 100px;
+  text-align: left;
+}
+
+ul li:hover ul {
+  display: block;
+  background-color: #f9f4ea;
+}
+
+/* Contenido principal*/
+h2 {
+  color: #9379ac;
+  margin-left: 15%;
+}
+
+.box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  margin-left: 15%;
+}
+
+.box1 {
+  background-color: #392b58;
+  padding: 5px 40px 200px 40px;
+  color: white;
+}
+
+.box2 {
+  background-color: #392b58;
+  padding: 5px 40px 200px 40px;
+  color: white;
+}
+
+.box3 {
+  background-color: #392b58;
+  padding: 5px 40px 200px 40px;
+  color: white;
+}
+
+.row {
+  padding-left: 15%;
+  background-color: #f9f4ea;
+}
+
+/* Última lista */
+.ultimo {
+  background-color: #f9f4ea;
+}
+
+footer {
+  text-align: center;
+  background-color: #392b58;
+  padding-top: 8px;
+  width: 100%;
+}
+
+footer p {
+  font-size: 13px;
+  color: bisque;
+}
+
+/*ELEMENTOS=HIJO BEM página de TRABAJOS>IDENTIDAD*/
+.trabajos__trabajo {
+  width: 200px;
+  height: auto;
+}
+
+.trabajos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-left: 15%;
+  margin-right: 15%;
+  /*Full responsive*/
+}
+
+/*Sobre mi*/
+.herramientas {
+  padding-left: 15%;
+  padding-right: 15%;
+  color: black;
+  background-color: #f9f4ea;
+  text-align: left;
+}
+
+/* Bienvenida */
+main {
+  margin-top: 120px;
+}
+
+h1 {
+  color: #392b58;
+  text-align: center;
+}
+
+/*Texto*/
+section {
+  font-style: normal;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+.saludoBienvenida p {
+  text-align: left;
+}
+/*# sourceMappingURL=origen.css.map */

@@ -1,0 +1,189 @@
+
+/*MEDIA QUERIES*/
+/*Variables*/
+
+
+
+/*Mobile*/
+@media only screen and (max-width:767px){
+    
+    .logo{
+        margin-left: 30%;
+    }
+    
+    header{
+        width: 100%;
+        height: 300px;
+        display: grid;
+    }
+    .menu{
+        height: 100px;
+    }
+
+    h1{
+        top: 30%;
+    }
+
+    main{
+        
+    }
+    .saludoBienvenida{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 250px;
+        display: inline-block;
+    }
+
+    .saludoBienvenida p{
+        font-size: 10px;
+      
+    }
+
+    .yo{
+        width: 200px;
+        height: auto;
+    }
+
+    h2{
+       font-size: 20px;
+    }
+
+    .box{
+        display: inline-block;
+        padding-left: 10%;
+        padding-right: 15%;
+        width: 350px; 
+        padding-top: 250px;       
+    }
+
+    .box1{
+        font-size: 8px;
+    }
+    .box2{
+        font-size: 8px;
+    }
+    .box3{
+        font-size: 8px;
+    }
+
+    .trabajos{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .ultimo{
+        margin-left: 15%;
+        margin-right: 15%;
+        display: inline;      
+      }    
+   
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    header{
+        background-color: rgb(249, 244, 234);
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 20%;
+        }
+    
+    ul{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: $margen;        
+    }    
+    
+    .menu{
+        margin-left: 10%;
+        padding-right: 10%;    
+    }
+
+    .logo{
+        margin-left: 15%;
+    }
+  
+    h1{
+        padding-top: 100px;
+    }    
+    .saludoBienvenida{
+        font-size: 10px;
+    }
+
+    .box{
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 10px;
+    }
+
+    .box1 {
+        background-color: rgb(57, 43, 88);
+       width: 150px;
+        color: white;
+        font-size: 8px;
+    }  
+
+    .box2 {
+        background-color: rgb(57, 43, 88);
+        width: 150px;
+        color: white;
+        font-size: 8px;
+    }  
+
+    .box3 {
+        background-color: rgb(57, 43, 88);
+        width: 150px;
+        color: white;
+        font-size: 8px;
+    }  
+
+    main{
+        padding-bottom: 20px;
+    }
+
+    .row {
+          font-size: 10px;
+    }
+
+    .herramientas{
+        padding-top: 30px;
+    }
+
+    .ultimo{
+        margin-left: 15%;
+        margin-right: 15%;
+        display: inline;  
+        background-color: rgb(249, 244, 234);
+      }    
+}    
+
+/*Desktop*/
+@media only screen and (min-width: 1024px){
+    li a:hover{
+    color:rgb(57, 43, 88);
+    font-size: 15px;
+}
+
+.box{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.box1:hover {
+    background-color: rgb(147, 121, 172); 
+ }
+
+ .box2:hover {
+    background-color: rgb(147, 121, 172); 
+ }
+
+ .box3:hover {
+    background-color: rgb(147, 121, 172); 
+ }
+ 
+}
+
+
