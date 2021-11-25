@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/*Css solo reconoce bloques de comentarios*/
+div {
+  margin-left: 15%;
+  margin-right: 15%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  width: 100%;
+  height: 100vh; }
+
+.logo {
+  width: 135px; }
+
+.logos {
+  width: 30px;
+  height: auto; }
+
+header {
+  background-color: #f9f4ea;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; }
+
+.saludoBienvenida {
+  display: flex;
+  align-items: center; }
+  .saludoBienvenida .yo {
+    width: 500px; }
+
+/* Menú con submenú*/
+.menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: right;
+  margin-right: 15%;
+  height: 40px;
+  text-align: center; }
+
+ul {
+  list-style: none; }
+
+li {
+  width: 100px;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  background-color: #f9f4ea;
+  margin: 20px; }
+
+li a {
+  text-decoration: none;
+  background-color: #f9f4ea; }
+
+ul ul {
+  position: absolute;
+  display: none;
+  background-color: #f9f4ea; }
+
+ul ul li a {
+  display: block;
+  width: 100px;
+  text-align: left; }
+
+ul {
+  padding-left: 5px !important; }
+
+a {
+  color: #392b58 !important; }
+
+ul li:hover ul {
+  display: block;
+  color: #9379ac;
+  background-color: #f9f4ea; }
+
+/* Contenido principal*/
+main {
+  padding-top: 10%; }
+
+h2 {
+  color: #9379ac;
+  margin-left: 15%; }
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 2%; }
+  .box .box1 {
+    background-color: #392b58;
+    padding: 5px 30px 130px 30px;
+    color: white;
+    font-size: 14px; }
+  .box .box2 {
+    background-color: #392b58;
+    padding: 5px 30px 130px 30px;
+    color: white;
+    font-size: 14px; }
+  .box .box3 {
+    background-color: #392b58;
+    padding: 5px 30px 130px 30px;
+    color: white;
+    font-size: 14px; }
+
+/* Última lista */
+.row {
+  padding-top: 50px;
+  padding-bottom: 2%; }
+
+.redes {
+  padding-top: 30px; }
+
+.ultimo {
+  background-color: #f9f4ea;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.sumario {
+  padding-top: 50px; }
+
+.form-check-label {
+  font-size: 11px; }
+
+footer {
+  text-align: center;
+  background-color: #392b58;
+  padding-top: 8px;
+  width: 100%; }
+
+footer p {
+  font-size: 13px;
+  color: bisque; }
+
+.trabajos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: 15%;
+  margin-right: 15%; }
+  .trabajos .trabajos__trabajo {
+    width: 300px;
+    height: auto; }
+
+/*Sobre mi*/
+.herramientas {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 30px;
+  color: black;
+  text-align: left; }
+
+/* Bienvenida*/
+h1 {
+  color: #392b58;
+  text-align: left;
+  margin-left: 15%; }
+
+/*Texto*/
+section {
+  font-style: normal;
+  text-align: center; }
+
+span {
+  font-weight: bold; }
+
+.saludoBienvenida p {
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%; }
+
+/*MEDIA QUERIES*/
+/*Variables*/
+/*Mobile*/
+@media only screen and (max-width: 767px) {
+  .logo {
+    margin-left: 30%; }
+  header {
+    width: 100%;
+    height: 300px;
+    display: grid; }
+  .menu {
+    height: 100px; }
+  h1 {
+    top: 30%; }
+  .saludoBienvenida {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 250px;
+    display: inline-block; }
+  .saludoBienvenida p {
+    font-size: 10px; }
+  .yo {
+    width: 200px;
+    height: auto; }
+  h2 {
+    font-size: 20px; }
+  .box {
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 15%;
+    width: 350px;
+    padding-top: 250px; }
+  .box1 {
+    font-size: 8px; }
+  .box2 {
+    font-size: 8px; }
+  .box3 {
+    font-size: 8px; }
+  .trabajos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .ultimo {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: inline; } }
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    background-color: #f9f4ea;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 20%; }
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 15%; }
+  .menu {
+    margin-left: 10%;
+    padding-right: 10%; }
+  .logo {
+    margin-left: 15%; }
+  h1 {
+    padding-top: 100px; }
+  .saludoBienvenida {
+    font-size: 10px; }
+  .box {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 10px; }
+  .box1 {
+    background-color: #392b58;
+    width: 150px;
+    color: white;
+    font-size: 8px; }
+  .box2 {
+    background-color: #392b58;
+    width: 150px;
+    color: white;
+    font-size: 8px; }
+  .box3 {
+    background-color: #392b58;
+    width: 150px;
+    color: white;
+    font-size: 8px; }
+  main {
+    padding-bottom: 20px; }
+  .row {
+    font-size: 10px; }
+  .herramientas {
+    padding-top: 30px; }
+  .ultimo {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: inline;
+    background-color: #f9f4ea; } }
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+  li a:hover {
+    color: #392b58;
+    font-size: 15px; }
+  .box {
+    margin-left: 15%;
+    margin-right: 15%; }
+  .box1:hover {
+    background-color: #9379ac; }
+  .box2:hover {
+    background-color: #9379ac; }
+  .box3:hover {
+    background-color: #9379ac; } }
+
+/*Sobre mi */
+.programa {
+  width: 170px;
+  height: 25px;
+  background-color: #392b58;
+  padding: 5px;
+  color: blanchedalmond;
+  animation-name: programa;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards; }
+
+@keyframes programa {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%;
+    background-color: #392b58; } }
+
+.programa50 {
+  width: 170px;
+  height: 25px;
+  background-color: #392b58;
+  padding: 5px;
+  color: blanchedalmond;
+  animation-name: programa50;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards; }
+
+@keyframes programa50 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 45%;
+    background-color: #392b58; } }
+
+.programa70 {
+  width: 170px;
+  height: 25px;
+  background-color: #392b58;
+  padding: 5px;
+  color: blanchedalmond;
+  animation-name: programa70;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards; }
+
+@keyframes programa70 {
+  0% {
+    width: 0px; }
+  100% {
+    width: 70%;
+    background-color: #392b58; } }
+
+.programa80 {
+  width: 170px;
+  height: 25px;
+  background-color: #392b58;
+  padding: 5px;
+  color: blanchedalmond;
+  animation-name: programa80;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards; }
+
+@keyframes programa80 {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%;
+    background-color: #392b58; } }
