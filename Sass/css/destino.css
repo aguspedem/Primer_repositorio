@@ -34,7 +34,7 @@ header {
   display: flex;
   align-items: center; }
   .saludoBienvenida .yo {
-    width: 500px; }
+    width: 50%; }
 
 /* Menú con submenú*/
 .menu {
@@ -120,7 +120,6 @@ h2 {
 
 /* Última lista */
 .row {
-  padding-top: 50px;
   padding-bottom: 2%; }
 
 .redes {
@@ -128,11 +127,9 @@ h2 {
 
 .ultimo {
   background-color: #f9f4ea;
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%; }
 
 .sumario {
   padding-top: 50px; }
@@ -157,9 +154,6 @@ footer p {
   margin-left: 15%;
   margin-right: 15%;
   padding-top: 10px; }
-  .trabajos .trabajos__trabajo {
-    width: 300px;
-    height: auto; }
 
 /*Sobre mi*/
 .herramientas {
@@ -198,13 +192,11 @@ span {
   .menu {
     height: 100px; }
   h1 {
-    padding-top: 80%;
-    padding-left: 15%; }
+    padding-top: 80%; }
   .saludoBienvenida {
-    margin-left: 15%;
-    margin-right: 15%;
     margin-top: 15px;
-    display: inline-block; }
+    display: inline-block;
+    width: 100%; }
   .saludoBienvenida p {
     font-size: 10px; }
   .yo {
@@ -228,7 +220,7 @@ span {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
   .trabajos__trabajo {
-    width: 30%; }
+    width: 125%; }
   .ultimo {
     display: inline-block; }
   .sumario {
@@ -299,7 +291,10 @@ span {
   .box2:hover {
     background-color: #9379ac; }
   .box3:hover {
-    background-color: #9379ac; } }
+    background-color: #9379ac; }
+  .trabajos__trabajo {
+    width: 300px;
+    height: auto; } }
 
 /*Sobre mi */
 .programa {

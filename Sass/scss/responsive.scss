@@ -25,13 +25,11 @@
 
     h1{
         padding-top: 80%;
-        padding-left: $margen;
     }
     .saludoBienvenida{
-        margin-left: 15%;
-        margin-right: 15%;
         margin-top: 15px;
         display: inline-block;
+        width: 100%;
     }
 
     .saludoBienvenida p{
@@ -70,7 +68,7 @@
         grid-template-rows: 1fr 1fr 1fr;
     }
     .trabajos__trabajo{
-        width: 30%;
+        width: 125%;
     }
 
     .ultimo{
@@ -186,6 +184,11 @@
  .box3:hover {
     background-color: rgb(147, 121, 172); 
  }
+
+ .trabajos__trabajo{
+    width: 300px;
+    height: auto;
+}
  
 }
 

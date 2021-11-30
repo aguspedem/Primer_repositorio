@@ -44,8 +44,7 @@ div{
     display: flex;
     align-items: center;
     .yo{
-        width: 500px;
-
+        width: 50%;
     }
     }
     
@@ -150,7 +149,6 @@ h2{
 
 /* Última lista */
 .row{
-    padding-top: 50px;
     padding-bottom: 2%;
    
 }     
@@ -161,11 +159,9 @@ h2{
 
 .ultimo{
         background-color: rgb(249, 244, 234);
-        width: 100%;
-        padding-left: $margen;
-        padding-right: $margen;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
 }
 
 .sumario{
@@ -197,10 +193,6 @@ footer p {
     margin-left: $margen;
     margin-right: $margen;
     padding-top: 10px;
-    .trabajos__trabajo{
-        width: 300px;
-        height: auto;
-    }
 }
 
 
