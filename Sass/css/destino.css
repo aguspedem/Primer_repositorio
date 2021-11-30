@@ -81,6 +81,12 @@ ul li:hover ul {
   color: #9379ac;
   background-color: #f9f4ea; }
 
+/* Bienvenida*/
+h1 {
+  color: #392b58;
+  padding-top: 10px;
+  margin-left: 15%; }
+
 /* Contenido principal*/
 main {
   padding-top: 10%; }
@@ -122,6 +128,7 @@ h2 {
 
 .ultimo {
   background-color: #f9f4ea;
+  width: 100%;
   padding-left: 15%;
   padding-right: 15%;
   display: grid;
@@ -148,7 +155,8 @@ footer p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin-left: 15%;
-  margin-right: 15%; }
+  margin-right: 15%;
+  padding-top: 10px; }
   .trabajos .trabajos__trabajo {
     width: 300px;
     height: auto; }
@@ -160,12 +168,6 @@ footer p {
   padding-bottom: 30px;
   color: black;
   text-align: left; }
-
-/* Bienvenida*/
-h1 {
-  color: #392b58;
-  text-align: left;
-  margin-left: 15%; }
 
 /*Texto*/
 section {
@@ -184,6 +186,9 @@ span {
 /*Variables*/
 /*Mobile*/
 @media only screen and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0; }
   .logo {
     margin-left: 30%; }
   header {
@@ -193,11 +198,12 @@ span {
   .menu {
     height: 100px; }
   h1 {
-    top: 30%; }
+    padding-top: 80%;
+    padding-left: 15%; }
   .saludoBienvenida {
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 250px;
+    margin-top: 15px;
     display: inline-block; }
   .saludoBienvenida p {
     font-size: 10px; }
@@ -208,10 +214,8 @@ span {
     font-size: 20px; }
   .box {
     display: inline-block;
-    padding-left: 10%;
-    padding-right: 15%;
-    width: 350px;
-    padding-top: 250px; }
+    padding-top: 20px;
+    width: 300px; }
   .box1 {
     font-size: 8px; }
   .box2 {
@@ -219,21 +223,23 @@ span {
   .box3 {
     font-size: 8px; }
   .trabajos {
-    margin-top: 50px;
+    padding-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
+  .trabajos__trabajo {
+    width: 30%; }
   .ultimo {
-    margin-left: 15%;
-    margin-right: 15%;
-    display: inline; } }
+    display: inline-block; }
+  .sumario {
+    display: flex; } }
 
 /*Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   header {
     background-color: #f9f4ea;
     width: 100%;
-    padding-left: 25%;
+    padding-left: 40%;
     padding-right: 20%; }
   ul {
     display: flex;
@@ -247,36 +253,37 @@ span {
   h1 {
     padding-top: 100px; }
   .saludoBienvenida {
-    font-size: 10px; }
+    font-size: 10px;
+    display: inline-block; }
   .box {
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 10px; }
+    font-size: 10px;
+    height: 150px; }
   .box1 {
     background-color: #392b58;
-    width: 150px;
+    width: 170px;
     color: white;
     font-size: 8px; }
   .box2 {
     background-color: #392b58;
-    width: 150px;
+    width: 170px;
     color: white;
     font-size: 8px; }
   .box3 {
     background-color: #392b58;
-    width: 150px;
+    width: 170px;
     color: white;
     font-size: 8px; }
   main {
-    padding-bottom: 20px; }
+    padding-bottom: 70px; }
   .row {
     font-size: 10px; }
   .herramientas {
     padding-top: 30px; }
   .ultimo {
-    margin-left: 15%;
-    margin-right: 15%;
-    display: inline;
+    display: inline-block;
+    width: 100%;
     background-color: #f9f4ea; } }
 
 /*Desktop*/
@@ -297,7 +304,7 @@ span {
 /*Sobre mi */
 .programa {
   width: 170px;
-  height: 25px;
+  height: 30px;
   background-color: #392b58;
   padding: 5px;
   color: blanchedalmond;
@@ -316,7 +323,7 @@ span {
 
 .programa50 {
   width: 170px;
-  height: 25px;
+  height: 30px;
   background-color: #392b58;
   padding: 5px;
   color: blanchedalmond;
@@ -335,7 +342,7 @@ span {
 
 .programa70 {
   width: 170px;
-  height: 25px;
+  height: 30px;
   background-color: #392b58;
   padding: 5px;
   color: blanchedalmond;
@@ -354,7 +361,7 @@ span {
 
 .programa80 {
   width: 170px;
-  height: 25px;
+  height: 30px;
   background-color: #392b58;
   padding: 5px;
   color: blanchedalmond;

@@ -45,6 +45,7 @@ div{
     align-items: center;
     .yo{
         width: 500px;
+
     }
     }
     
@@ -100,6 +101,12 @@ color: rgb(147, 121, 172);
 background-color: rgb(249, 244, 234);
 }
 
+/* Bienvenida*/
+h1{
+    color:rgb(57, 43, 88);
+    padding-top: 10px;
+    margin-left: $margen;
+}
 
 /* Contenido principal*/
 main{
@@ -154,6 +161,7 @@ h2{
 
 .ultimo{
         background-color: rgb(249, 244, 234);
+        width: 100%;
         padding-left: $margen;
         padding-right: $margen;
         display: grid;
@@ -188,6 +196,7 @@ footer p {
     grid-template-rows: 1fr;
     margin-left: $margen;
     margin-right: $margen;
+    padding-top: 10px;
     .trabajos__trabajo{
         width: 300px;
         height: auto;
@@ -204,13 +213,6 @@ footer p {
     text-align: left;
 }
 
-/* Bienvenida*/
-h1{
-    color:rgb(57, 43, 88);
-    text-align: left;
-    margin-left: $margen;
-}
-
 /*Texto*/
 section {
          font-style: normal;
@@ -220,7 +222,6 @@ section {
 span {
       font-weight: bold;
 }
-
 
 .saludoBienvenida p {
     text-align: left;  
