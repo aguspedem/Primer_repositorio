@@ -26,9 +26,7 @@ main {
 
 .saludoBienvenida {
   display: flex;
-  align-items: center;
-  margin-right: 10%;
-  margin-left: 2%; }
+  align-items: center; }
   .saludoBienvenida .yo {
     width: 40%; }
 
