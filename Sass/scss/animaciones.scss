@@ -11,12 +11,13 @@
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
+    border-radius: 4px;
  }
 
  @keyframes programa{
     0%{ width: 0%; }
     100%{ width: 90%;
-      background-color:rgb(57, 43, 88);}
+      background-color:rgb(57, 43, 88);}  
  }
 
  .programa50{
@@ -30,6 +31,7 @@
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
+    border-radius: 4px;
  }
 
  @keyframes programa50 {
@@ -49,6 +51,7 @@
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
+    border-radius: 4px;
  }
 
 
@@ -69,6 +72,7 @@
     animation-duration: 2s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
+    border-radius: 4px;
  }
  
 
