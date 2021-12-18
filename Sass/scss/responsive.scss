@@ -19,6 +19,7 @@
         height: 100px;
         margin: 0;
         padding: 0;
+        z-index: 1;
     }
 
     .menu{
@@ -83,6 +84,7 @@
        font-size: 20px;
     }
 
+    /*Cards*/
 .container .card .content .imgBx {
     position: relative;
     width: 100px;
@@ -136,9 +138,6 @@
         display: inline-block; 
       }    
 
-    .ultimo .redes .logo{
-        margin-left: 10vh;
-    }
     .sumario{
         display: flex;
         padding-bottom: 100px;
