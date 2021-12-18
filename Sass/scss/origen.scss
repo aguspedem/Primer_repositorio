@@ -40,6 +40,25 @@ main{
         width: 40%;
     }
     }
+.saludoBienvenida p{
+    padding-top: 25px;
+}
+
+.presentacion{
+    width: 60%;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.presentacion p{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.presentacion h1 {
+    text-align: start;
+}
     
  /* Menú navbar*/
 
@@ -109,6 +128,46 @@ h2{
     margin-left: $margen;
 }
 
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: white;
+    margin: 20px;
+    box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .card .sci li a button{
+    color: white;
+    font-size: 18px;
+    background-color: rgb(57, 43, 88);
+    border-radius: 5px;
+    padding: 3px 10px 3px 10px;
+    margin-top: 25px;
+}
+
 /* Última lista */
 .row{
     padding-bottom: 2%;
@@ -141,6 +200,7 @@ h2{
     display: flex;
     flex-direction: column;
     padding-top: 50px;
+    text-align: start;
     ul li {
          font-size: 12px;
     }
@@ -216,8 +276,3 @@ span {
 
 @import "responsive";
 @import "animaciones";
-
-
-/*Cards*/
-
-

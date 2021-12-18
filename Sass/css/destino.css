@@ -30,6 +30,22 @@ main {
   .saludoBienvenida .yo {
     width: 40%; }
 
+.saludoBienvenida p {
+  padding-top: 25px; }
+
+.presentacion {
+  width: 60%;
+  align-items: center;
+  margin-right: 0;
+  margin-left: 0; }
+
+.presentacion p {
+  margin-right: 0;
+  margin-left: 0; }
+
+.presentacion h1 {
+  text-align: start; }
+
 /* Menú navbar*/
 header {
   background-color: #f9f4ea;
@@ -87,6 +103,42 @@ h2 {
   color: #9379ac;
   margin-left: 15%; }
 
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0; }
+
+.container .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: white;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.container .card .sci li a button {
+  color: white;
+  font-size: 18px;
+  background-color: #392b58;
+  border-radius: 5px;
+  padding: 3px 10px 3px 10px;
+  margin-top: 25px; }
+
 /* Última lista */
 .row {
   padding-bottom: 2%; }
@@ -112,7 +164,8 @@ h2 {
 .sumario {
   display: flex;
   flex-direction: column;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: start; }
   .sumario ul li {
     font-size: 12px; }
 
@@ -210,6 +263,8 @@ span {
     height: 180px; }
   main {
     padding-top: 25%; }
+  main h1 {
+    margin-top: 20px; }
   .saludoBienvenida {
     margin-top: 15px;
     display: inline-block;
@@ -217,40 +272,14 @@ span {
   .saludoBienvenida p {
     font-size: 10px; }
   .yo {
-    width: 200px;
+    width: 300px;
     height: auto; }
   h2 {
     font-size: 20px; }
-  .container {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0; }
-  .container .card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.05);
-    margin: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px); }
-  .container .card .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
   .container .card .content .imgBx {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     overflow: hidden; }
   .container .card .content .imgBx img {
     position: absolute;
@@ -259,7 +288,7 @@ span {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  .container .card .content .contentBx h3 {
+  .container .card .content .contentBx {
     color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -267,23 +296,17 @@ span {
     font-size: 18px;
     text-align: center;
     margin: 20px 0 10px;
-    line-height: 1.1em;
-    background-color: #9379ac;
+    background-color: white;
+    border: none;
     padding: 7px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    cursor: pointer; }
   .container .card .sci {
     position: absolute;
     bottom: 70px;
     display: flex;
     padding-top: 50px;
     opacity: 0; }
-  .container .card .sci li {
-    opacity: 0;
-    width: 100%; }
-  .container .card .sci li a {
-    opacity: 0;
-    width: 100%;
-    height: 200px; }
   .trabajos {
     padding-top: 5%;
     display: grid;
@@ -293,9 +316,12 @@ span {
     width: 125%; }
   .ultimo {
     display: inline-block; }
+  .ultimo .redes .logo {
+    margin-left: 10vh; }
   .sumario {
     display: flex;
-    padding-bottom: 100px; } }
+    padding-bottom: 100px;
+    padding-left: 10vh; } }
 
 /*Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -313,26 +339,6 @@ span {
   .saludoBienvenida {
     font-size: 10px;
     display: inline-block; }
-  .box {
-    margin-left: 15%;
-    margin-right: 15%;
-    font-size: 10px;
-    height: 150px; }
-  .box1 {
-    background-color: #392b58;
-    width: 170px;
-    color: white;
-    font-size: 8px; }
-  .box2 {
-    background-color: #392b58;
-    width: 170px;
-    color: white;
-    font-size: 8px; }
-  .box3 {
-    background-color: #392b58;
-    width: 170px;
-    color: white;
-    font-size: 8px; }
   main {
     padding-bottom: 70px; }
   .trabajos__trabajo {
@@ -348,35 +354,8 @@ span {
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
-  .container {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0; }
-  .container .card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.05);
-    margin: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px); }
-  .container .card .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s; }
   .container .card:hover .content {
-    transform: translateY(-20px); }
+    transform: translateY(-8px); }
   .container .card .content .imgBx {
     position: relative;
     width: 150px;
@@ -415,38 +394,13 @@ span {
     transform: translateY(0px);
     opacity: 1;
     background-color: white; }
-  .container .card .sci li a {
+  .container .card .sci li a button {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #392b58;
-    border-radius: 5px; }
-  li a:hover {
-    color: #392b58;
-    font-size: 15px; }
-  .card:hover .icon {
-    margin-top: -110px;
-    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
-    border-radius: 10px 10px 0px 0px; }
-  .descripcion input:hover {
-    box-shadow: 5px;
-    background-color: #392b58;
-    color: white;
-    border-radius: 10px; }
-  .card:hover .icon {
-    background: #9379ac; }
-  .card:hover .descripcion {
-    margin-top: 0;
-    transition: all 300ms;
-    border-radius: 0px 0px 10px 10px; }
-  .box {
-    margin-left: 15%;
-    margin-right: 15%; }
-  .box1:hover {
-    background-color: #9379ac; }
-  .box2:hover {
-    background-color: #9379ac; }
-  .box3:hover {
-    background-color: #9379ac; }
+    border-radius: 5px;
+    padding: 3px 10px 3px 10px;
+    margin-top: 25px; }
   .trabajos__trabajo {
     width: 300px;
     height: auto; }
@@ -469,8 +423,7 @@ span {
     background-color: #f9f4ea; }
   .sumario ul {
     display: flex;
-    flex-direction: column;
-    align-items: left; } }
+    flex-direction: column; } }
 
 /*Sobre mi */
 .programa {
@@ -552,5 +505,3 @@ span {
   100% {
     width: 80%;
     background-color: #392b58; } }
-
-/*Cards*/
