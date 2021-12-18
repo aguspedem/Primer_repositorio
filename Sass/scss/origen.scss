@@ -10,9 +10,6 @@ div{
     padding: 0;
   }
   
-  html{
-      font-family: 'Montserrat', sans-serif
-  }
   
   body{
       width: 100%;
@@ -22,42 +19,9 @@ div{
   .logo{
       width: 135px;
   }
-  
-  .logos{
-      width: 30px;
-      height: auto;
-  }
-  
-  
+    
 main{
     padding-top: 10%;
-}
-
-.saludoBienvenida{
-    display: flex;
-    align-items: center;
-    .yo{
-        width: 40%;
-    }
-    }
-.saludoBienvenida p{
-    padding-top: 25px;
-}
-
-.presentacion{
-    width: 60%;
-    align-items: center;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.presentacion p{
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.presentacion h1 {
-    text-align: start;
 }
     
  /* Menú navbar*/
@@ -68,6 +32,7 @@ main{
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 1;
 }
 
 .menu{
@@ -114,10 +79,35 @@ a {color: #392b58!important;}
 ul ul{
 position: absolute;
 display: none;
-background-color: rgb(249, 244, 234);
 }
 
+
 /* Contenido principal*/
+
+.saludoBienvenida{
+    display: flex;
+    align-items: center;
+    .yo{
+        width: 40%;
+    }
+    }
+    
+.presentacion{
+    width: 60%;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.presentacion p{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.presentacion h1 {
+    text-align: start;
+}
+
 h1{
     color:rgb(57, 43, 88);
     margin-left: $margen;
@@ -128,9 +118,9 @@ h2{
     margin-left: $margen;
 }
 
+/*Cards*/
 .container {
 	position: relative;
-	z-index: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -178,6 +168,10 @@ h2{
     padding-top: 30px;
 }
 
+.logos {
+    width: 5vh;
+}
+
 .ultimo{
         background-color: rgb(249, 244, 234);
         display: grid;
@@ -197,6 +191,7 @@ h2{
 }
 
 .sumario{
+    color: rgb(57, 43, 88);
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -231,7 +226,7 @@ footer p {
     color: bisque;
 }
 
-  
+ /*Trabajos*/ 
 .trabajos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -251,12 +246,7 @@ footer p {
     text-align: left;
     margin-left: 15%;
     margin-right: 15%;
-    /*padding-left: 5%;    
-    padding-right: 5%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);*/
 }
-
 
 /*Texto*/
 section {
@@ -270,6 +260,7 @@ span {
 
 .saludoBienvenida p {
     text-align: left;  
+    padding-top: 25px;
     margin-left: $margen;  
     margin-right: $margen;
  }

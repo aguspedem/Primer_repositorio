@@ -7,9 +7,6 @@ div {
   margin: 0;
   padding: 0; }
 
-html {
-  font-family: 'Montserrat', sans-serif; }
-
 body {
   width: 100%;
   height: 100vh; }
@@ -17,34 +14,8 @@ body {
 .logo {
   width: 135px; }
 
-.logos {
-  width: 30px;
-  height: auto; }
-
 main {
   padding-top: 10%; }
-
-.saludoBienvenida {
-  display: flex;
-  align-items: center; }
-  .saludoBienvenida .yo {
-    width: 40%; }
-
-.saludoBienvenida p {
-  padding-top: 25px; }
-
-.presentacion {
-  width: 60%;
-  align-items: center;
-  margin-right: 0;
-  margin-left: 0; }
-
-.presentacion p {
-  margin-right: 0;
-  margin-left: 0; }
-
-.presentacion h1 {
-  text-align: start; }
 
 /* Menú navbar*/
 header {
@@ -52,7 +23,8 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  position: fixed; }
+  position: fixed;
+  z-index: 1; }
 
 .menu {
   display: flex;
@@ -91,10 +63,28 @@ a {
 
 ul ul {
   position: absolute;
-  display: none;
-  background-color: #f9f4ea; }
+  display: none; }
 
 /* Contenido principal*/
+.saludoBienvenida {
+  display: flex;
+  align-items: center; }
+  .saludoBienvenida .yo {
+    width: 40%; }
+
+.presentacion {
+  width: 60%;
+  align-items: center;
+  margin-right: 0;
+  margin-left: 0; }
+
+.presentacion p {
+  margin-right: 0;
+  margin-left: 0; }
+
+.presentacion h1 {
+  text-align: start; }
+
 h1 {
   color: #392b58;
   margin-left: 15%; }
@@ -103,9 +93,9 @@ h2 {
   color: #9379ac;
   margin-left: 15%; }
 
+/*Cards*/
 .container {
   position: relative;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,6 +136,9 @@ h2 {
 .redes {
   padding-top: 30px; }
 
+.logos {
+  width: 5vh; }
+
 .ultimo {
   background-color: #f9f4ea;
   display: grid;
@@ -162,6 +155,7 @@ h2 {
   padding-bottom: 10px; }
 
 .sumario {
+  color: #392b58;
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -189,6 +183,7 @@ footer p {
   font-size: 13px;
   color: bisque; }
 
+/*Trabajos*/
 .trabajos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -205,11 +200,7 @@ footer p {
   color: black;
   text-align: left;
   margin-left: 15%;
-  margin-right: 15%;
-  /*padding-left: 5%;    
-    padding-right: 5%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);*/ }
+  margin-right: 15%; }
 
 /*Texto*/
 section {
@@ -221,6 +212,7 @@ span {
 
 .saludoBienvenida p {
   text-align: left;
+  padding-top: 25px;
   margin-left: 15%;
   margin-right: 15%; }
 
