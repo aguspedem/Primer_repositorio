@@ -131,7 +131,9 @@ h2 {
 
 /* Última parte */
 .row {
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+  margin-left: 0%;
+  margin-right: 0%; }
 
 .redes {
   padding-top: 30px; }
@@ -263,7 +265,7 @@ span {
     display: inline-block;
     width: 100%; }
   .saludoBienvenida p {
-    font-size: 12px; }
+    font-size: 10px; }
   h2 {
     font-size: 20px; }
   /*Cards*/
@@ -358,7 +360,7 @@ span {
   .logo {
     margin-left: 15%; }
   .saludoBienvenida {
-    font-size: 12px;
+    font-size: 10px;
     display: inline-block; }
   /*Sobre mi*/
   .herramientas {
