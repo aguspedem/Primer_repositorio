@@ -29,7 +29,7 @@
 
     #btn-menu:checked ~ .menu{
         margin-left: 0%;
-        margin-top: 38%;
+        margin-top: 40%;
     }
 
     ul {
@@ -68,7 +68,6 @@
         margin-top: 15px;
         display: inline-block;
         width: 100%;
-        margin-left: $margen;
     }
 
     .saludoBienvenida p{
@@ -136,7 +135,7 @@
     .trabajoRapport{
         display: inline-block;
         flex-direction: column;
-        width: 50vh;
+        width: 30vh;
         height: auto;
     }
 
