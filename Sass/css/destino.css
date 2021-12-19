@@ -263,7 +263,7 @@ span {
     display: inline-block;
     width: 100%; }
   .saludoBienvenida p {
-    font-size: 10px; }
+    font-size: 12px; }
   h2 {
     font-size: 20px; }
   /*Cards*/
@@ -483,7 +483,7 @@ span {
     width: 300px;
     height: auto; }
   .trabajoRapport {
-    width: 150vh; } }
+    width: 100vh; } }
 
 /*Sobre mi */
 .programa {
