@@ -129,7 +129,7 @@ h2 {
   padding: 3px 10px 3px 10px;
   margin-top: 25px; }
 
-/* Última lista */
+/* Última parte */
 .row {
   padding-bottom: 2%; }
 
@@ -154,13 +154,13 @@ h2 {
   padding-right: 20px;
   padding-bottom: 10px; }
 
-.sumario {
+.secciones {
   color: #392b58;
   display: flex;
   flex-direction: column;
   padding-top: 50px;
   text-align: start; }
-  .sumario ul li {
+  .secciones ul li {
     font-size: 12px; }
 
 .formulario {
@@ -169,7 +169,7 @@ h2 {
 .form-check-label {
   font-size: 11px; }
 
-.ultimo .sumario a {
+.ultimo .secciones a {
   text-decoration: none;
   font-size: 16px; }
 
@@ -190,8 +190,7 @@ footer p {
   grid-template-rows: 1fr;
   margin-left: 15%;
   margin-right: 15%;
-  padding-top: 10px;
-  border-radius: 5px; }
+  padding-top: 10px; }
 
 /*Sobre mi*/
 .herramientas {
@@ -217,7 +216,6 @@ span {
   margin-right: 15%; }
 
 /*MEDIA QUERIES*/
-/*Variables*/
 /*Mobile*/
 @media only screen and (max-width: 767px) {
   * {
@@ -225,6 +223,7 @@ span {
     padding: 0; }
   .logo {
     margin-left: 10%; }
+  /*Menú*/
   header {
     width: 100%;
     height: 100px;
@@ -238,7 +237,7 @@ span {
     margin-left: -150%; }
   #btn-menu:checked ~ .menu {
     margin-left: 0%;
-    margin-top: 40%; }
+    margin-top: 38%; }
   ul {
     flex-direction: column; }
   li {
@@ -254,6 +253,7 @@ span {
     background-color: #f9f4ea;
     width: 100%;
     height: 180px; }
+  /*Contenido principal*/
   main {
     padding-top: 25%; }
   main h1 {
@@ -261,7 +261,8 @@ span {
   .saludoBienvenida {
     margin-top: 15px;
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    margin-left: 15%; }
   .saludoBienvenida p {
     font-size: 10px; }
   h2 {
@@ -296,6 +297,7 @@ span {
     display: flex;
     padding-top: 50px;
     opacity: 0; }
+  /*Trabajos*/
   .trabajos {
     padding-top: 5%;
     display: grid;
@@ -303,12 +305,17 @@ span {
     grid-template-rows: 1fr 1fr 1fr; }
   .trabajos__trabajo {
     width: 125%; }
-  /*Footer*/
+  .trabajoRapport {
+    display: inline-block;
+    flex-direction: column;
+    width: 50vh;
+    height: auto; }
+  /*Última parte*/
   .ultimo {
     display: inline-block; }
   .ultimo .redes .logo {
     margin-left: 20%; }
-  .sumario {
+  .secciones {
     display: flex;
     padding-bottom: 100px;
     padding-left: 10vh; } }
@@ -316,34 +323,116 @@ span {
 /*Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   main {
-    padding-top: 15%; }
+    padding-top: 15%;
+    padding-bottom: 70px; }
+  /*Menú*/
   header {
-    background-color: #f9f4ea;
-    width: 100%; }
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    z-index: 2; }
+  .menu {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-left: -150%; }
+  #btn-menu:checked ~ .menu {
+    margin-left: 0%;
+    margin-top: 20%; }
   ul {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-right: 15%; }
+    flex-direction: column; }
+  li {
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    background-color: #f9f4ea;
+    margin: 10px; }
+  header label {
+    display: block; }
+  ul {
+    background-color: #f9f4ea;
+    width: 100%;
+    height: 180px; }
+  /*Contenido principal*/
   .logo {
     margin-left: 15%; }
   .saludoBienvenida {
     font-size: 10px;
     display: inline-block; }
-  main {
-    padding-bottom: 70px; }
-  .trabajos__trabajo {
-    width: 125%; }
-  .row {
-    font-size: 10px; }
+  /*Sobre mi*/
   .herramientas {
     padding-top: 30px; }
-  .ultimo {
+  /*Trabajos*/
+  .trabajoRapport {
     display: inline-block;
+    flex-direction: column;
+    width: 50vh;
+    height: auto; }
+  /*Cards*/
+  .container .card .content {
+    z-index: 1; }
+  .container .card .content .imgBx {
+    position: relative;
+    width: 130px;
+    height: 130px; }
+  .container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #f9f4ea; } }
+    height: 100%; }
+  .container .card .content .contentBx {
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px; }
+  .container .card .content .contentBx a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #392b58; }
+  .container .card .sci {
+    position: absolute;
+    bottom: 70px;
+    display: flex;
+    padding-top: 50px;
+    opacity: 0; }
+  /*Última parte*/
+  .row {
+    font-size: 10px; }
+  .ultimo {
+    display: inline-block; }
+  .ultimo .redes .logo {
+    margin-left: 20%; }
+  .secciones {
+    display: flex;
+    padding-bottom: 100px;
+    padding-left: 10vh; } }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
+  /*Menú*/
+  header {
+    background-color: #f9f4ea;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; }
+  header ul ul li a {
+    display: block;
+    width: 100px;
+    text-align: left; }
+  ul {
+    padding-left: 5px !important; }
+  ul li:hover ul {
+    display: block;
+    color: #9379ac;
+    background-color: #f9f4ea; }
+  /*Cards*/
   .container .card:hover .content {
     transform: translateY(-8px); }
   .container .card .content .contentBx a {
@@ -386,29 +475,16 @@ span {
     border-radius: 5px;
     padding: 3px 10px 3px 10px;
     margin-top: 25px; }
+  /*Última parte*/
+  .secciones ul {
+    display: flex;
+    flex-direction: column; }
+  /*Trabajos*/
   .trabajos__trabajo {
     width: 300px;
     height: auto; }
-  header {
-    background-color: #f9f4ea;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed; }
-  header ul ul li a {
-    display: block;
-    width: 100px;
-    text-align: left; }
-  ul {
-    padding-left: 5px !important; }
-  ul li:hover ul {
-    display: block;
-    color: #9379ac;
-    background-color: #f9f4ea; }
-  .sumario ul {
-    display: flex;
-    flex-direction: column; } }
+  .trabajoRapport {
+    width: 150vh; } }
 
 /*Sobre mi */
 .programa {
