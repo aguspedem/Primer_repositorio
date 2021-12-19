@@ -145,9 +145,14 @@
       }    
 
     .ultimo .redes .logo{
-        margin-left: 20%;
-        
+        margin-left: 20%;   
     }
+    .row{
+        padding-bottom: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }     
+
     .secciones{
         display: flex;
         padding-bottom: 100px;
@@ -276,7 +281,10 @@ opacity: 0;
  /*Última parte*/
     .row {
     font-size: 10px;
+    margin-left: 0%;
+    margin-right: 0%;
     }
+
     .ultimo{
         display: inline-block; 
       }    
