@@ -265,6 +265,11 @@ span {
     width: 100%; }
   .saludoBienvenida p {
     font-size: 10px; }
+  .presentacion {
+    width: 100%;
+    font-size: 12px; }
+  .yo {
+    width: 70%; }
   h2 {
     font-size: 20px; }
   /*Cards*/
