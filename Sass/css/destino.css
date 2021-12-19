@@ -133,7 +133,7 @@ h2 {
 .row {
   padding-bottom: 2%;
   margin-left: 0%;
-  margin-right: 0%; }
+  margin-right: 0% !important; }
 
 .redes {
   padding-top: 30px; }
@@ -318,8 +318,7 @@ span {
     margin-left: 20%; }
   .row {
     padding-bottom: 2%;
-    margin-left: 0%;
-    margin-right: 0%; }
+    margin-right: 0% !important; }
   .secciones {
     display: flex;
     padding-bottom: 100px;
@@ -408,8 +407,7 @@ span {
   /*Última parte*/
   .row {
     font-size: 10px;
-    margin-left: 0%;
-    margin-right: 0%; }
+    margin-right: 0% !important; }
   .ultimo {
     display: inline-block; }
   .ultimo .redes .logo {
